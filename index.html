@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bima Lintang Ramadhan | Front-End Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-code">&lt;BLR /&gt;</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>BLR<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Beranda</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">Tentang</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Keahlian</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Proyek</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Kontak</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span>
+                Tersedia untuk proyek baru
+            </div>
+            <h1 class="hero-title reveal-up">
+                <span class="hero-greeting">Halo, Saya</span>
+                <span class="hero-name">Bima Lintang<br>Ramadhan</span>
+            </h1>
+            <p class="hero-subtitle reveal-up">
+                <span class="typed-text" id="typedText"></span>
+                <span class="typed-cursor">|</span>
+            </p>
+            <p class="hero-description reveal-up">
+                Lulusan <strong>Sistem Informasi</strong> dari <strong>Institut Teknologi dan Bisnis Tuban</strong>.
+                Mengubah ide menjadi pengalaman digital yang indah dan fungsional.
+            </p>
+            <div class="hero-cta reveal-up">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Lihat Proyek</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Hubungi Saya</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Proyek</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Teknologi</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator reveal-up">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll ke bawah</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">&lt;tentang&gt;</span>
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-subtitle">Mengenal lebih dekat tentang perjalanan dan passion saya</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="about-img-decoration"></div>
+                        <div class="about-img-dots"></div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3 class="about-heading">Front-End Developer<br>yang Passionate</h3>
+                    <p class="about-text">
+                        Saya adalah <strong>Bima Lintang Ramadhan</strong>, seorang Front-End Developer
+                        yang bersemangat dalam menciptakan pengalaman web yang menarik dan responsif.
+                        Lulus dari <strong>Institut Teknologi dan Bisnis Tuban</strong> dengan jurusan
+                        <strong>Sistem Informasi</strong>, saya memiliki fondasi yang kuat dalam
+                        pengembangan perangkat lunak dan desain antarmuka pengguna.
+                    </p>
+                    <p class="about-text">
+                        Saya percaya bahwa setiap baris kode yang ditulis harus menghadirkan
+                        nilai dan keindahan. Dengan pendekatan yang detail dan perhatian terhadap
+                        user experience, saya berusaha membuat website yang tidak hanya terlihat
+                        bagus tetapi juga berfungsi dengan sempurna.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Pendidikan</span>
+                                <span class="info-value">S1 Sistem Informasi</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <span class="info-label">Kampus</span>
+                                <span class="info-value">ITB Tuban</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Lokasi</span>
+                                <span class="info-value">Tuban, Jawa Timur</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <span class="info-label">Fokus</span>
+                                <span class="info-value">Front-End Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Mari Bekerja Sama</span>
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </div>
+            </div>
+            <span class="section-tag closing-tag reveal-up">&lt;/tentang&gt;</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">&lt;keahlian&gt;</span>
+                <h2 class="section-title">Keahlian Saya</h2>
+                <p class="section-subtitle">Teknologi dan tools yang saya kuasai</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card reveal-up" data-delay="0">
+                    <div class="skill-icon" style="--icon-color: #e34f26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4 class="skill-name">HTML5</h4>
+                    <p class="skill-desc">Struktur semantik & aksesibel</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="skill-card reveal-up" data-delay="100">
+                    <div class="skill-icon" style="--icon-color: #1572b6;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h4 class="skill-name">CSS3</h4>
+                    <p class="skill-desc">Animasi, Flexbox & Grid</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="skill-card reveal-up" data-delay="200">
+                    <div class="skill-icon" style="--icon-color: #f7df1e;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h4 class="skill-name">JavaScript</h4>
+                    <p class="skill-desc">ES6+, DOM, API Integration</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="skill-card reveal-up" data-delay="300">
+                    <div class="skill-icon" style="--icon-color: #61dafb;">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h4 class="skill-name">React</h4>
+                    <p class="skill-desc">Hooks, Components & State</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="skill-card reveal-up" data-delay="400">
+                    <div class="skill-icon" style="--icon-color: #7952b3;">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h4 class="skill-name">Bootstrap</h4>
+                    <p class="skill-desc">Responsive & Component</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="skill-card reveal-up" data-delay="500">
+                    <div class="skill-icon" style="--icon-color: #f05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h4 class="skill-name">Git</h4>
+                    <p class="skill-desc">Version Control & Kolaborasi</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+            <span class="section-tag closing-tag reveal-up">&lt;/keahlian&gt;</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">&lt;proyek&gt;</span>
+                <h2 class="section-title">Proyek Saya</h2>
+                <p class="section-subtitle">Beberapa karya terbaik yang telah saya buat</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Website</button>
+                <button class="filter-btn" data-filter="app">Aplikasi</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal-up" data-category="web" data-delay="0">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="--accent: #6c63ff;">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 class="project-title">E-Commerce Platform</h4>
+                        <p class="project-desc">Website toko online responsif dengan fitur keranjang belanja, pembayaran, dan manajemen produk.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-up" data-category="app" data-delay="100">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="--accent: #00c9a7;">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 class="project-title">Task Management App</h4>
+                        <p class="project-desc">Aplikasi manajemen tugas dengan drag & drop, filter, dan notifikasi real-time.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-up" data-category="ui" data-delay="200">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="--accent: #ff6b6b;">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 class="project-title">Dashboard Analytics</h4>
+                        <p class="project-desc">Dashboard interaktif untuk visualisasi data dengan grafik dan statistik real-time.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal-up" data-category="web" data-delay="300">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="--accent: #ffa726;">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 class="project-title">Food Delivery Website</h4>
+                        <p class="project-desc">Website pemesanan makanan online dengan fitur pencarian, menu interaktif, dan checkout.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal-up" data-category="web" data-delay="400">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="--accent: #ab47bc;">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 class="project-title">Personal Blog</h4>
+                        <p class="project-desc">Blog pribadi dengan desain minimalis, dark mode, dan sistem komentar.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal-up" data-category="app" data-delay="500">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="--accent: #26c6da;">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 class="project-title">Weather App</h4>
+                        <p class="project-desc">Aplikasi cuaca real-time dengan animasi dinamis berdasarkan kondisi cuaca terkini.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag closing-tag reveal-up">&lt;/proyek&gt;</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">&lt;kontak&gt;</span>
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p class="section-subtitle">Mari berdiskusi tentang proyek atau kolaborasi</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3 class="contact-heading">Mari Terhubung!</h3>
+                    <p class="contact-text">
+                        Saya selalu terbuka untuk peluang baru, proyek menarik,
+                        atau sekadar berdiskusi tentang teknologi. Jangan ragu
+                        untuk menghubungi saya!
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <a href="mailto:bimalintang@email.com" class="contact-card-value">bimalintang@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Telepon</span>
+                                <a href="tel:+6281234567890" class="contact-card-value">+62 812-3456-7890</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Lokasi</span>
+                                <span class="contact-card-value">Tuban, Jawa Timur, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Nama Lengkap</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subjek</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Pesan</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Kirim Pesan</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Pesan Terkirim!</h4>
+                        <p>Terima kasih, saya akan segera merespons.</p>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag closing-tag reveal-up">&lt;/kontak&gt;</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>BLR<span class="logo-bracket"> /&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Dibuat dengan <span class="heart">&hearts;</span> oleh Bima Lintang Ramadhan
+                </p>
+                <p class="footer-copyright">
+                    &copy; 2026 Bima Lintang Ramadhan. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" title="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
